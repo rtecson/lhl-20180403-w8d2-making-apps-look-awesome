@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        UIButton.appearance().backgroundColor = UIColor.orange
+        UIButton.appearance(whenContainedInInstancesOf: [UIStackView.self]).backgroundColor = UIColor.orange
         return true
     }
 
